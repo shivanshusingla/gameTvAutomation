@@ -1,0 +1,10 @@
+<suite name="Game Tv Login Automation">
+  <listeners>
+    <listener class-name="listeners.TestNGListener"/>
+  </listeners>
+  <test name="Game Tv Login Test" preserve-order="true">
+    <classes>
+      <class name="tests.GameTvLoginTests"/>
+    </classes>
+  </test>
+</suite>
