@@ -9,7 +9,7 @@
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8. Set up JAVA_HOME & ANDROID_HOME in environment variables <h4>
   
 <h2>How to SetUp Project :</h2>
-<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Take git clone using command -<q>git clone https://github.com/shivanshusingla/gitTrendingAutomation.git</q> in any folder</h4>
+<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Take git clone using command -<q>git clone https://github.com/shivanshusingla/gameTvAutomation.git</q> in any folder</h4>
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Import as Maven Project in any IDE <h4>
 <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. If using eclipse set ANDROID_HOME <h4>
   
