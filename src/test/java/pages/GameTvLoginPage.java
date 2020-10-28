@@ -19,16 +19,30 @@ public class GameTvLoginPage extends CommonPage {
   @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"password\"]")
   private AndroidElement passwordField;
 
-  @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"allow\"]")
+  @AndroidFindBy(xpath = "//android.widget.Button[contains(@text,\"Authorize app\")]")
   private AndroidElement authorizeAppButton;
+
+  @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"Play_Page_Title_503\"]")
+  private AndroidElement gameTvHeading;
+
+  @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"SvgPicture_HamburgerIcon_001\"]")
+  private AndroidElement gameTvHamburgerIcon;
 
   public GameTvLoginPage(
       AppiumDriver<? extends MobileElement> driver) {
     super(driver);
   }
 
+  public AndroidElement getTwitterButton() {
+    return twitterButton;
+  }
+
   public void clickOnTwitterButton() {
     wrapperMethods.click(twitterButton);
+  }
+
+  public AndroidElement getUserNameOrEmailField() {
+    return userNameOrEmailField;
   }
 
   public void enterEmailId(String email) {
@@ -41,6 +55,18 @@ public class GameTvLoginPage extends CommonPage {
 
   public void clickOnAuthorizeApp() {
     wrapperMethods.click(authorizeAppButton);
+  }
+
+  public AndroidElement getGameTvHeadingElement() {
+    return gameTvHeading;
+  }
+
+  public boolean checkGametvHeading() {
+    return wrapperMethods.verifyPresenceOfElement(gameTvHeading);
+  }
+
+  public boolean checkHamburgerIcon() {
+    return wrapperMethods.verifyPresenceOfElement(gameTvHamburgerIcon);
   }
 
 }
